@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lives on 橙小张的博客</title>
-    <link>https://blog.sailfishc.cn/life/</link>
+    <link>https://www.sailfishc.cn/life/</link>
     <description>Recent content in Lives on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 05 Jan 2020 18:09:12 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.sailfishc.cn/life/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sailfishc.cn/life/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OKR入门</title>
-      <link>https://blog.sailfishc.cn/life/okr/</link>
+      <link>https://www.sailfishc.cn/life/okr/</link>
       <pubDate>Sun, 05 Jan 2020 18:09:12 +0800</pubDate>
       
-      <guid>https://blog.sailfishc.cn/life/okr/</guid>
+      <guid>https://www.sailfishc.cn/life/okr/</guid>
       <description>定义 OKR = Objective + Key Result + Tasks（Plans）
 OKR是目标+关键结果+任务去实现的
 什么是OKR？ OKR是“目标和关键结果”的缩写。该概念是在英特尔公司发明的，并已在包括Google和Zynga在内的世界上最大的技术公司中广泛使用。 OKR旨在在指定的时间内为组织和团队设置策略和目标。在工作期结束时，您的OKR提供参考，以评估您在执行目标方面的表现。 花费一致的精力来确定您的公司战略，并使用OKR以易于消化的方式进行规划，可以真正帮助您的员工了解他们如何为全局做出贡献并与其他团队保持一致。
@@ -32,10 +32,10 @@ OKR是目标+关键结果+任务去实现的
     
     <item>
       <title>RSS背后的逻辑</title>
-      <link>https://blog.sailfishc.cn/life/rss-basic/</link>
+      <link>https://www.sailfishc.cn/life/rss-basic/</link>
       <pubDate>Sun, 01 Dec 2019 18:09:12 +0800</pubDate>
       
-      <guid>https://blog.sailfishc.cn/life/rss-basic/</guid>
+      <guid>https://www.sailfishc.cn/life/rss-basic/</guid>
       <description>目录  前言 介绍RSS RSS的背后的逻辑论述 RSS实践 总结 参考资源  前言 其实知道RSS也挺久了，但是一直没应用起来，今天正式的了解了一下，发现RSS其实是很能创造生产力的一种工具。
 介绍RSS  RSS (originally ** Site Summary** RDF ; later, two competing approaches emerged, which used the backronyms Rich Site Summary and Really Simple Syndication respectively) [2] is a type of web feed [3] which allows users and applications to access updates to websites in a standardized, computer-readable format
  简单来说：RSS指的是允许以标准化计算机可读的方式让用户和应用程序访问网站更新。
