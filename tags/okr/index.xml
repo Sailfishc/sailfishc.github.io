@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OKR on 橙小张的博客</title>
-    <link>https://sailfishc.cn/tags/okr/</link>
+    <link>https://sailfishc.github.io/tags/okr/</link>
     <description>Recent content in OKR on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 05 Jan 2020 18:09:12 +0800</lastBuildDate>
     
-	<atom:link href="https://sailfishc.cn/tags/okr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sailfishc.github.io/tags/okr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OKR入门</title>
-      <link>https://sailfishc.cn/life/okr/</link>
+      <link>https://sailfishc.github.io/life/okr/</link>
       <pubDate>Sun, 05 Jan 2020 18:09:12 +0800</pubDate>
       
-      <guid>https://sailfishc.cn/life/okr/</guid>
+      <guid>https://sailfishc.github.io/life/okr/</guid>
       <description>定义 OKR = Objective + Key Result + Tasks（Plans）
 OKR是目标+关键结果+任务去实现的
 什么是OKR？ OKR是“目标和关键结果”的缩写。该概念是在英特尔公司发明的，并已在包括Google和Zynga在内的世界上最大的技术公司中广泛使用。 OKR旨在在指定的时间内为组织和团队设置策略和目标。在工作期结束时，您的OKR提供参考，以评估您在执行目标方面的表现。 花费一致的精力来确定您的公司战略，并使用OKR以易于消化的方式进行规划，可以真正帮助您的员工了解他们如何为全局做出贡献并与其他团队保持一致。
