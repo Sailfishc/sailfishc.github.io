@@ -5,7 +5,8 @@
     <link>https://blog.sailfishc.cn/categories/</link>
     <description>Recent content in Categories on 橙小张的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 13 Jan 2019 17:37:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/categories/index.xml" rel="self" type="application/rss+xml" />
@@ -98,33 +99,6 @@
       <pubDate>Fri, 24 Mar 2017 15:12:00 +0000</pubDate>
       
       <guid>https://blog.sailfishc.cn/categories/%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>学习方法</title>
-      <link>https://blog.sailfishc.cn/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Wed, 22 Mar 2017 22:37:00 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hexo</title>
-      <link>https://blog.sailfishc.cn/categories/hexo/</link>
-      <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/categories/hexo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IntelliJ IDEA</title>
-      <link>https://blog.sailfishc.cn/categories/intellij-idea/</link>
-      <pubDate>Sun, 28 Feb 2016 17:58:27 +0000</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/categories/intellij-idea/</guid>
       <description></description>
     </item>
     
