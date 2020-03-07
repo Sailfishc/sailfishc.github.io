@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <link crossorigin="anonymous" media="all"
+        rel="stylesheet"
+        href="https://blog.sailfishc.cn/css/frameworks.css" />
+    <link crossorigin="anonymous" media="all"
+        rel="stylesheet" href="https://blog.sailfishc.cn/css/github.css" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>通过Hugo&#43;Github快速搭建博客 - 橙小张的博客</title>
+
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://blog.sailfishc.cn/images/favicon.ico">
+    <meta name="theme-color" content="#1e2327">
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-124900585-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+<body class="env-production emoji-size-boost page-responsive page-profile">
+  <div class="position-relative js-header-wrapper ">
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+        <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+    <header class="Header js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
+        <div class="Header-item d-none d-lg-flex">
+            <a class="Header-link" href="https://blog.sailfishc.cn/" aria-label="Homepage"
+                data-ga-click="Header, go to dashboard, icon:logo">
+                <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+                    width="32" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+            </a>
+        </div>
+        <div
+            class="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
+            <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+                role="combobox" aria-owns="jump-to-results" aria-label="Search or jump to" aria-haspopup="listbox"
+                aria-expanded="false">
+                <div class="position-relative">
+                </div>
+            </div>
+        </div>
+        <div class="Header-item Header-item--full flex-justify-center d-lg-none position-relative" style="margin-right: auto;">
+            <a class="Header-link" href="https://blog.sailfishc.cn/" aria-label="Homepage"
+                data-ga-click="Header, go to dashboard, icon:logo">
+                <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+                    width="32" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+            </a>
+        </div>
+        <div class="Header-item position-relative mr-0 d-none d-lg-flex">
+            <details class="details-overlay details-reset">
+                <summary class="Header-link" aria-label="View profile and more"
+                    data-ga-click="Header, show menu, icon:avatar">
+                    
+                    <img alt="" class="avatar" src="https://blog.sailfishc.cn/images/avatar.png" height="20" width="20">
+                    
+                </summary>
+            </details>
+        </div>
+    </header>
+</div>
+
+<div id="start-of-content" class="show-on-focus"></div>
+<div id="js-flash-container">
+</div>
+
+  
+<div class="application-main " data-commit-hovercards-enabled="">
+    <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+        <main id="js-repo-pjax-container" data-pjax-container="">
+            <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-0 pt-lg-4 ">
+                <div class="repohead-details-container clearfix container-lg p-responsive d-none d-lg-block">
+                    <div class="mb-3 d-flex">
+                        <h1 class="public css-truncate float-none flex-auto width-fit pl-0">
+                            <a class="avatar mr-1" href="https://blog.sailfishc.cn/about/">
+                            
+                                <img
+                                    src="https://blog.sailfishc.cn/images/avatar.png" width="26" height="26">
+                            
+                            </a>
+                            <span class="author"><a
+                                    href="https://blog.sailfishc.cn/">sailfishc</a></span>
+                            <span class="path-divider">/</span>
+                            <strong itemprop="name" class="css-truncate-target" style="max-width: 410px"><a
+                                    href="https://blog.sailfishc.cn/posts/deploy_blog_to_hugo/">通过Hugo&#43;Github快速搭建博客</a></strong>
+
+                            <div class="d-block text-small text-gray">
+                                Created <time-ago datetime="2019-10-24" class="no-wrap"
+                                    title="Created at 2019/10/24">
+                                    2019-10-24</time-ago>
+                                <span class="file-info-divider"></span>
+                                Modifyed <time-ago datetime="2019-10-24" class="no-wrap"
+                                    title="Modified  at 2019/10/24">
+                                    2019-10-24</time-ago>
+                            </div>
+                        </h1>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  p-responsive">
+                <div class="repository-content ">
+                    <div class="Box mt-3 position-relative">
+                        <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
+                            <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                                1733 Words
+                                
+                            </div>
+                        </div>
+
+                        <div id="readme" class="Box-body readme blob instapaper_body js-code-block-container">
+                            <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><blockquote>
+<p>写在前面</p>
+</blockquote>
+
+<p>程序员总想有自己的一个博客，厌倦了CSDN，简书，掘金这些博客网站，那就自己搭建一个吧，这篇文章包含了从0开始搭建到部署，可以没有自己的域名，自己的服务器，但是面包总会有的。</p>
+
+<p>先罗列下常见的博客网站：</p>
+
+<ul>
+<li>Hexo</li>
+<li>WordPress</li>
+<li>JekyII</li>
+<li>Ghost</li>
+<li>Hugo</li>
+</ul>
+
+<p>Hexo是我之前用的博客网站，但是在使用过程中遇到了一些问题：</p>
+
+<ul>
+<li>node环境问题较多，本身对Node不熟悉，解决成本高</li>
+<li>node_modules过大，网络问题下载依赖过慢</li>
+<li>编译为html过程越来越慢</li>
+</ul>
+
+<p>后来发现了Hugo，发现Github已经3w多star了，Hugo官网对于Hugo的介绍是：<code>The world’s fastest framework for building websites</code>，总结起来就一句话，那就是快！！！</p>
+
+<h2 id="快速开始">快速开始</h2>
+
+<ul>
+<li><a href="https://gohugo.io/getting-started/quick-start/">Quick Start | Hugo</a></li>
+</ul>
+
+<p>Hugo安装很简单，就以Mac为例快速开始：</p>
+
+<ul>
+<li>安装Hugo：<code>brew install Hugo</code></li>
+<li>查看Hugo版本：<code>Hugo version</code></li>
+<li>新建一个网站，名字为<code>quickstart</code>：<code>Hugo new site quickstart</code></li>
+<li>安装主题
+
+<ul>
+<li>进入目录：<code>cd quickstart</code></li>
+<li>使用Git Init创建Git仓库：<code>git init</code></li>
+<li>下载主题，放入theme目录（名字为<code>ananke</code>）：<code>git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke</code></li>
+<li>使用主题：<code>echo ‘theme = “ananke”’ &gt;&gt; config.toml</code></li>
+</ul></li>
+<li>新建MarkDown文章（也可以用现有的放入content/posts目录）：<code>Hugo new posts/my-first-post.md</code></li>
+<li>本地预览：<code>Hugo server -D</code></li>
+<li>打开浏览器：<code>http://localhost:1313</code></li>
+<li>搞定🌹</li>
+</ul>
+
+<h2 id="部署">部署</h2>
+
+<p>本地搭建好了网站要部署到外部服务上，常见的方式有三种：</p>
+
+<ul>
+<li>部署Github Pages</li>
+<li>部署到自己服务器，用静态服务器（例如Nginx）上</li>
+<li>使用一些云服务（推荐）</li>
+</ul>
+
+<p>先简要介绍下流程，Hugo将Markdown转为静态资源（Html，Css，Js）等资源，放在public目录下，将public发布到静态服务器或者CDN下达到外部可以访问的效果。</p>
+
+<p>对于自己购买服务器部署的方式目前是不推荐的，因为刚开始博客没有自己的品牌，浪费一些资源在服务器上的话是不划算的（也增加维护成本），所以就只考虑基于Github Pages和云服务这两种方式，对于Github Pages，简要说明下，Github Pages提供了3种方式：</p>
+
+<ul>
+<li>新建Github用户名（例如<code>sailfishc</code>）的仓库：<code>sailfishc.github.io</code></li>
+<li>新建项目，在<code>master</code>分支下新建<code>docs</code>目录</li>
+<li>新建项目，添加<code>gh-pages</code>分支</li>
+</ul>
+
+<p>最开始本来想尝试第一种，但是还有一个博客已经使用这种模式了，暂时是用不了，因为第二种会将源代码和静态网站在一个分支中，也就不考虑，就采用了第三种，对于第三种方式的部署，最开始采用了Travis部署的方式，但是经过一些尝试，效果并不好（主要是对于Travis的脚本不熟悉，找了一些脚本效果比较差），最后也放弃了，有兴趣的小伙伴们可以看参考文章中对于Travis部署的一些博客，之后一段时间采用了本地执行脚本的方式，等文章写完后，执行脚本<a href="https://gist.github.com/Sailfishc/5c8861ace0469aec69f834d972da64f3">push hugo site to Github gh-pages branch · GitHub</a> ，脚本会自动将生成静态public文件，然后加入<code>gh-pages</code>分支，然后将源代码push到<code>master</code>分支，public下的文件push到<code>gh-pages</code>分支，就可以使用<code>https://sailfishc.github.io/sail-blog</code>访问博客站点了。</p>
+
+<p>大功告成了吗？没有，因为没使用第一种Github pages方案，这个链接包含了<code>项目这名</code>这一级路径，用着很难受，于是就有了之后的改版，也就是<code>Host On Render</code>的方案。</p>
+
+<ul>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/">Host on Render | Hugo</a></li>
+</ul>
+
+<blockquote>
+<p>将网站部署到Render上，享受全球CDN服务，通过<code>Cloudflare</code>自定义域名</p>
+</blockquote>
+
+<ul>
+<li>打开Render</li>
+<li>注册</li>
+<li>创建<code>Webservice</code></li>
+<li>授予仓库权限</li>
+<li>设置参数
+
+<ul>
+<li>Environment</li>
+<li>Build Command</li>
+<li>Publish Directory</li>
+</ul></li>
+<li>将自定义域名加入Render，在Cloudflare配置DNS转发</li>
+<li>搞定🌹</li>
+</ul>
+
+<h2 id="一些总结">一些总结</h2>
+
+<blockquote>
+<p>中间走了很多弯路，到最后发现官方文档已经有很多成熟的方案，只是自己没认真看，借<code>左耳朵耗子的话</code>：花时间学习基础知识，花时间度文档，只要把基础打扎实，认真读下文档，就会生出很多时间。</p>
+
+<p>参考文章</p>
+</blockquote>
+
+<ul>
+<li><a href="https://axdlog.com/zh/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/">利用Travis CI和Hugo將Blog自動部署到Github Pages - AxdLog</a></li>
+<li><a href="https://zyfdegh.github.io/post/201705-how-i-setup-hugo/">我是如何用 Hugo、Travis CI 和 GitHub Pages 搭建博客的? - 独行的蚂蚁 - 博客</a></li>
+<li><a href="https://blog.yuantops.com/tech/hugo-travis-ci-auto-deploy-to-gh-pages/">Blog自动部署实践: Hugo + Travis CI -&gt; GitHub Pages // Yuantops’ Blog</a></li>
+<li><a href="https://medium.com/swlh/hosting-a-hugo-blog-on-github-pages-with-travis-ci-e74a1d686f10">Hosting a Hugo blog on GitHub Pages with Travis CI - The Startup - Medium</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub | Hugo</a></li>
+<li><a href="https://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub Pages - Hugo中文文档</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/">Host on Render | Hugo</a></li>
+</ul></article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+
+  <div class="footer container-lg width-full p-responsive" role="contentinfo">
+    <div
+        class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+        <ul
+            class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+            <li class="mr-3 mr-lg-0"></a></li>
+        </ul>
+
+        <a aria-label="Homepage" title="橙小张的博客" class="footer-octicon d-none d-lg-block mx-lg-4"
+            href="https://blog.sailfishc.cn/">
+            <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                </path>
+            </svg>
+        </a>
+        <ul
+            class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        </ul>
+    </div>
+    <div class="d-flex flex-justify-center pb-6">
+        <span class="f6 text-gray-light"></span>
+    </div>
+</div>
+
+<script crossorigin="anonymous"
+    type="application/javascript" src="https://blog.sailfishc.cn/js/frameworks.js"></script>
+
+<script crossorigin="anonymous" async="async"
+    type="application/javascript" src="https://blog.sailfishc.cn/js/github-bootstrap.js"></script>
+<script>
+    let classs = ['pinned-item-desc', 'text-gray', 'text-small', 'd-block', 'mt-2', 'mb-3'];
+    const pinned_posts = document.getElementsByName('pinned-post');
+    for (let i = 0; i < pinned_posts.length; i++) {
+        for (let j = 0; j < classs.length; j++) {
+            const ps = pinned_posts[i].getElementsByTagName('p');
+            for (let k = 0; k < ps.length; k++) {
+                ps[k].classList.add(classs[j]);
+            }
+        }
+    }
+    classs = [ 'd-inline-block', 'text-gray', 'mb-2', 'pr-4'];
+    const posts_posts = document.getElementsByName('posts-post');
+    for (let i = 0; i < posts_posts.length; i++) {
+        for (let j = 0; j < classs.length; j++) {
+            const ps = posts_posts[i].getElementsByTagName('p');
+            for (let k = 0; k < ps.length; k++) {
+                ps[k].classList.add(classs[j]);
+            }
+        }
+    }
+</script>
+
+</body>
+
+</html>

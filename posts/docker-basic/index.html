@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <link crossorigin="anonymous" media="all"
+        rel="stylesheet"
+        href="https://blog.sailfishc.cn/css/frameworks.css" />
+    <link crossorigin="anonymous" media="all"
+        rel="stylesheet" href="https://blog.sailfishc.cn/css/github.css" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>开发人员必备的Docker基础 - 橙小张的博客</title>
+
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://blog.sailfishc.cn/images/favicon.ico">
+    <meta name="theme-color" content="#1e2327">
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-124900585-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+<body class="env-production emoji-size-boost page-responsive page-profile">
+  <div class="position-relative js-header-wrapper ">
+    <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
+        <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
+    </span>
+    <header class="Header js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
+        <div class="Header-item d-none d-lg-flex">
+            <a class="Header-link" href="https://blog.sailfishc.cn/" aria-label="Homepage"
+                data-ga-click="Header, go to dashboard, icon:logo">
+                <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+                    width="32" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+            </a>
+        </div>
+        <div
+            class="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
+            <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+                role="combobox" aria-owns="jump-to-results" aria-label="Search or jump to" aria-haspopup="listbox"
+                aria-expanded="false">
+                <div class="position-relative">
+                </div>
+            </div>
+        </div>
+        <div class="Header-item Header-item--full flex-justify-center d-lg-none position-relative" style="margin-right: auto;">
+            <a class="Header-link" href="https://blog.sailfishc.cn/" aria-label="Homepage"
+                data-ga-click="Header, go to dashboard, icon:logo">
+                <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+                    width="32" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+            </a>
+        </div>
+        <div class="Header-item position-relative mr-0 d-none d-lg-flex">
+            <details class="details-overlay details-reset">
+                <summary class="Header-link" aria-label="View profile and more"
+                    data-ga-click="Header, show menu, icon:avatar">
+                    
+                    <img alt="" class="avatar" src="https://blog.sailfishc.cn/images/avatar.png" height="20" width="20">
+                    
+                </summary>
+            </details>
+        </div>
+    </header>
+</div>
+
+<div id="start-of-content" class="show-on-focus"></div>
+<div id="js-flash-container">
+</div>
+
+  
+<div class="application-main " data-commit-hovercards-enabled="">
+    <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+        <main id="js-repo-pjax-container" data-pjax-container="">
+            <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-0 pt-lg-4 ">
+                <div class="repohead-details-container clearfix container-lg p-responsive d-none d-lg-block">
+                    <div class="mb-3 d-flex">
+                        <h1 class="public css-truncate float-none flex-auto width-fit pl-0">
+                            <a class="avatar mr-1" href="https://blog.sailfishc.cn/about/">
+                            
+                                <img
+                                    src="https://blog.sailfishc.cn/images/avatar.png" width="26" height="26">
+                            
+                            </a>
+                            <span class="author"><a
+                                    href="https://blog.sailfishc.cn/">sailfishc</a></span>
+                            <span class="path-divider">/</span>
+                            <strong itemprop="name" class="css-truncate-target" style="max-width: 410px"><a
+                                    href="https://blog.sailfishc.cn/posts/docker-basic/">开发人员必备的Docker基础</a></strong>
+
+                            <div class="d-block text-small text-gray">
+                                Created <time-ago datetime="2019-11-10" class="no-wrap"
+                                    title="Created at 2019/11/10">
+                                    2019-11-10</time-ago>
+                                <span class="file-info-divider"></span>
+                                Modifyed <time-ago datetime="2019-11-10" class="no-wrap"
+                                    title="Modified  at 2019/11/10">
+                                    2019-11-10</time-ago>
+                            </div>
+                        </h1>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  p-responsive">
+                <div class="repository-content ">
+                    <div class="Box mt-3 position-relative">
+                        <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
+                            <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                                2004 Words
+                                
+                            </div>
+                        </div>
+
+                        <div id="readme" class="Box-body readme blob instapaper_body js-code-block-container">
+                            <article class="markdown-body entry-content p-3 p-md-6" itemprop="text">
+
+<h2 id="docker简介">Docker简介</h2>
+
+<p>说到Docker，我们就来谈谈业务应用从旧时代到Docker的发展历程。</p>
+
+<h3 id="旧时代">旧时代</h3>
+
+<p>旧时代是基于Application运转的，一台服务器（无虚拟机时代）部署多个Application，不管是Windows还是Linux其实是无法保证在一台服务器上稳定安全的运行多个应用的，CPU，内存等公共资源的竞争导致应用极为不稳定。</p>
+
+<h3 id="vm阶段">VM阶段</h3>
+
+<p>VM让世界变得美好了，VM算是划时代意义的技术，但是VM不是完美的，VM会占用宿主机额外的CPU,RAM和存储（VM不够轻量级），启动慢。</p>
+
+<h3 id="linux容器">Linux容器</h3>
+
+<p>容器技术出现的比较早，只是Docker将Linux容器技术广泛应用了，Docker解决了VM的问题以外，还有如下优点：</p>
+
+<ul>
+<li>容易上手</li>
+<li>解决了运维中的环境问题及服务调度的痛点</li>
+</ul>
+
+<h2 id="docker安装">Docker安装</h2>
+
+<p>Docker提供了桌面安装和服务器安装，对于开发来说，我们可以归类为：</p>
+
+<ul>
+<li>Windows平台</li>
+<li>Mac平台</li>
+<li>Linux平台：Ubuntu/CentOS</li>
+</ul>
+
+<h3 id="windows平台">Windows平台</h3>
+
+<p>硬件要求：</p>
+
+<ul>
+<li>win10 64位</li>
+<li>启用Hyper-V和容器特性</li>
+</ul>
+
+<p>安装步骤：<a href="https://docs.docker.com/docker-for-windows/install/">Install Docker Desktop on Windows | Docker Documentation</a></p>
+
+<ul>
+<li>下载Docker for windows安装包： <a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a></li>
+<li>根据安装向导安装</li>
+<li>成功后再CMD中输入<code>docker version</code>查看版本，如果有版本信息表示安装成功</li>
+</ul>
+
+<h3 id="mac平台">Mac平台</h3>
+
+<p>Mac版本和Windows桌面版安装类似，找到下载包，静默安装即可：
+- 下载地址：下载Docker for windows安装包： <a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a></p>
+
+<h3 id="ubuntu安装">Ubuntu安装</h3>
+
+<ul>
+<li>Ubuntu安装：<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">Get Docker Engine - Community for Ubuntu | Docker Documentation</a></li>
+</ul>
+
+<p>Ubuntu有几种方式安装Docker，我们使用便捷脚本来安装Docker</p>
+
+<ul>
+<li>在Linux打开Shell</li>
+<li>执行：<code>curl -fsSL https://get.docker.com -o get-docker.sh</code></li>
+<li>执行：<code>sudo sh get-docker.sh</code></li>
+<li>执行：<code>sudo usermod -aG docker your-user</code></li>
+<li>使用docker —version查看docker版本</li>
+</ul>
+
+<blockquote>
+<p>备注：
+1. 不要使用root用户使用Docker
+2. 需要将非root用户到本地Docker Unix组当中：<code>sudo usermod -aG docker your-user</code> , your-user为执行Docker的用户名</p>
+</blockquote>
+
+<p>卸载Docker-CE：</p>
+
+<ul>
+<li><code>sudo apt-get purge docker-ce</code></li>
+<li><code>sudo rm -rf /var/lib/docker</code></li>
+</ul>
+
+<h3 id="centos安装">CentOS安装</h3>
+
+<ul>
+<li>CentOS安装： <a href="https://docs.docker.com/install/linux/docker-ce/centos/">https://docs.docker.com/install/linux/docker-ce/centos/</a></li>
+<li>安装方式同Ubuntu</li>
+</ul>
+
+<p>卸载Docker-ce
+- <code>sudo yum remove docker-ce</code>
+- <code>sudo rm -rf /var/lib/docker</code></p>
+
+<h2 id="docker镜像与容器">Docker镜像与容器</h2>
+
+<p>镜像和容器是Docker的重要概念，在本小节主要会有一下内容：</p>
+
+<ul>
+<li>镜像和容器简介</li>
+<li>搜索镜像</li>
+<li>下载镜像</li>
+<li>删除镜像</li>
+<li>运行容器</li>
+<li>停止容器</li>
+<li>删除容器</li>
+<li>命令合集</li>
+</ul>
+
+<h3 id="镜像和容器简介">镜像和容器简介</h3>
+
+<p>对于开发来说，简单理解一下镜像：镜像就是Class，容器就是实例对象，一个Class可以有多个实例，每个实例即使内容一致，但是也不是相等的（不同的容器ID和名称）</p>
+
+<h3 id="搜索镜像">搜索镜像</h3>
+
+<p>Docker安装后并没有镜像，需要从仓库中拉取（仓库可以类比Maven仓库，分为本地仓库，私有仓库和中央仓库），使用命令docker  search [image-name]，就可以看到一个redis仓库列表，列表中包含了以下元数据：</p>
+
+<ul>
+<li>名称</li>
+<li>描述</li>
+<li>star数</li>
+<li>是否是官方</li>
+<li>是否自动化</li>
+</ul>
+
+<p><img src="http://img.sailfishc.cn/20190825204152.png?imageslim" alt="搜索镜像" /></p>
+
+<h3 id="下载镜像">下载镜像</h3>
+
+<p>在找到需要的镜像后，可以使用<code>docker pull [image-name]</code>来下载镜像</p>
+
+<h3 id="运行容器">运行容器</h3>
+
+<p>基础运行容器： <code>docker run -it ubuntu:latest /bin/bash</code></p>
+
+<p>上面的命令是以交互形式运行了一个最后版本的ubuntu系统，默认进入的目录是/bin/bash，其中的一些参数介绍：</p>
+
+<ul>
+<li>run：运行容器的命令</li>
+<li>-i -t（可以合并为-it）：交互形式，还有如-d,&amp;等形式</li>
+<li>ubuntu:latest：镜像名称（版本）</li>
+<li>/bin/bash：交互形式进入后的目录</li>
+</ul>
+
+<blockquote>
+<p>如果当前没有该镜像，那么在运行容器时会先执行pull命令下载，然后再执行run命令，如果以-it参数启动容器后再bash中执行<code>ctrl-c</code>或者是执行exit命令会终止容器，原因是容器不存在任何进程则无法存在，可以使用<code>ctrl-pq</code>断开shell与容器终端的链接（容器不会终止）</p>
+</blockquote>
+
+<p><img src="http://img.sailfishc.cn/20190825205542.png?imageslim" alt="运行容器" /></p>
+
+<p>完整的一个docker run命令示例：<code>docker run -d --name my-redis --restart always redis</code></p>
+
+<p>解释如下：</p>
+
+<ul>
+<li>-d：后台运行模式</li>
+<li>—name：命名一个容器名称为my-redis</li>
+<li>—restart：always是一种简单的自我修复策略，表明除非明确停止（例如执行了stop命令），否则会一直尝试重启</li>
+</ul>
+
+<h3 id="镜像和容器命令合集">镜像和容器命令合集</h3>
+
+<ul>
+<li>搜索镜像：docker search [image-name]</li>
+<li>下载镜像：docker pull [image-name]</li>
+<li>查看本地镜像列表：docker images</li>
+<li>删除镜像：docker rm [docker-name]:[tag]</li>
+<li>运行容器: docker run [image-name]</li>
+<li>重新进入容器：docker exec -it container-id /bin/bash</li>
+<li>查看容器列表:docker ps</li>
+<li>停止容器：docker stop container-id</li>
+<li>删除容器：docker rm container-id</li>
+<li>启动容器: docker start container-id</li>
+</ul>
+
+<blockquote>
+<p>备注：
+1. image-name也可以使用image-id（唯一）
+2. 删除镜像时如果镜像存在关联的容器，并且容器处于运行或者是停止状态，不允许删除镜像</p>
+</blockquote>
+
+<h3 id="实例-运行一个web服务器">实例：运行一个Web服务器</h3>
+
+<p>启动Nginx容器：<code>docker run --name some-nginx -d -p 8080:80 nginx</code></p>
+
+<blockquote>
+<p>以后台模式运行了nginx，名字为some-nginx，-p参数留到下一小节讲解，下图是启动后在本机（localhost）访问nginx容器，可以看到已经可以正常访问到nginx服务了。</p>
+</blockquote>
+
+<p><img src="http://img.sailfishc.cn/20190825211847.png?imageslim" alt="Nginx容器" /></p>
+
+<h2 id="参考资料">参考资料</h2>
+
+<ul>
+<li>深入浅出Docker</li>
+<li>Docker官网</li>
+</ul>
+</article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+
+  <div class="footer container-lg width-full p-responsive" role="contentinfo">
+    <div
+        class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+        <ul
+            class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+            <li class="mr-3 mr-lg-0"></a></li>
+        </ul>
+
+        <a aria-label="Homepage" title="橙小张的博客" class="footer-octicon d-none d-lg-block mx-lg-4"
+            href="https://blog.sailfishc.cn/">
+            <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                </path>
+            </svg>
+        </a>
+        <ul
+            class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        </ul>
+    </div>
+    <div class="d-flex flex-justify-center pb-6">
+        <span class="f6 text-gray-light"></span>
+    </div>
+</div>
+
+<script crossorigin="anonymous"
+    type="application/javascript" src="https://blog.sailfishc.cn/js/frameworks.js"></script>
+
+<script crossorigin="anonymous" async="async"
+    type="application/javascript" src="https://blog.sailfishc.cn/js/github-bootstrap.js"></script>
+<script>
+    let classs = ['pinned-item-desc', 'text-gray', 'text-small', 'd-block', 'mt-2', 'mb-3'];
+    const pinned_posts = document.getElementsByName('pinned-post');
+    for (let i = 0; i < pinned_posts.length; i++) {
+        for (let j = 0; j < classs.length; j++) {
+            const ps = pinned_posts[i].getElementsByTagName('p');
+            for (let k = 0; k < ps.length; k++) {
+                ps[k].classList.add(classs[j]);
+            }
+        }
+    }
+    classs = [ 'd-inline-block', 'text-gray', 'mb-2', 'pr-4'];
+    const posts_posts = document.getElementsByName('posts-post');
+    for (let i = 0; i < posts_posts.length; i++) {
+        for (let j = 0; j < classs.length; j++) {
+            const ps = posts_posts[i].getElementsByTagName('p');
+            for (let k = 0; k < ps.length; k++) {
+                ps[k].classList.add(classs[j]);
+            }
+        }
+    }
+</script>
+
+</body>
+
+</html>
