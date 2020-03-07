@@ -206,13 +206,6 @@
   </url>
   
   <url>
-    <loc>https://www.sailfishc.cn/tags/%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2019-01-13T17:37:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://www.sailfishc.cn/categories/%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2019-01-13T17:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -220,14 +213,21 @@
   </url>
   
   <url>
-    <loc>https://www.sailfishc.cn/tags/mybatis/</loc>
-    <lastmod>2019-01-07T21:37:00+00:00</lastmod>
+    <loc>https://www.sailfishc.cn/tags/%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2019-01-13T17:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.sailfishc.cn/categories/mybatis/</loc>
+    <lastmod>2019-01-07T21:37:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sailfishc.cn/tags/mybatis/</loc>
     <lastmod>2019-01-07T21:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -507,13 +507,6 @@
   </url>
   
   <url>
-    <loc>https://www.sailfishc.cn/categories/hexo/</loc>
-    <lastmod>2016-02-28T17:58:27+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://www.sailfishc.cn/tags/hexo/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -521,7 +514,7 @@
   </url>
   
   <url>
-    <loc>https://www.sailfishc.cn/categories/intellij-idea/</loc>
+    <loc>https://www.sailfishc.cn/categories/hexo/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -529,6 +522,13 @@
   
   <url>
     <loc>https://www.sailfishc.cn/tags/intellij-idea/</loc>
+    <lastmod>2016-02-28T17:58:27+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.sailfishc.cn/categories/intellij-idea/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
