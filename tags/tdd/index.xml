@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 07 Mar 2020 11:11:53 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 23:57:32 +0800</lastBuildDate>
     
 	<atom:link href="https://sailfishc.github.io/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>如何学习英语</title>
-      <link>https://sailfishc.github.io/posts/2020/03/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD/</link>
-      <pubDate>Sat, 07 Mar 2020 11:11:53 +0800</pubDate>
-      
-      <guid>https://sailfishc.github.io/posts/2020/03/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E8%8B%B1%E8%AF%AD/</guid>
-      <description>&lt;p&gt;这段时间自己一直在学习英语，也一直在寻找适合自己的英语学习方法，买了一些Native English  Speaker和Non-Native English  Speaker的课程，总结下来没有什么捷径，就这几点：&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>如何使用Unit testing健壮Java代码</title>
