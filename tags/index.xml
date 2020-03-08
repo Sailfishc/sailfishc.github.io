@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 07 Mar 2020 11:11:53 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 18:48:42 +0800</lastBuildDate>
     
 	<atom:link href="https://sailfishc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python</title>
+      <link>https://sailfishc.github.io/tags/python/</link>
+      <pubDate>Sun, 08 Mar 2020 18:48:42 +0800</pubDate>
+      
+      <guid>https://sailfishc.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Schema</title>
+      <link>https://sailfishc.github.io/tags/schema/</link>
+      <pubDate>Sun, 08 Mar 2020 18:48:42 +0800</pubDate>
+      
+      <guid>https://sailfishc.github.io/tags/schema/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SICP</title>
+      <link>https://sailfishc.github.io/tags/sicp/</link>
+      <pubDate>Sun, 08 Mar 2020 18:48:42 +0800</pubDate>
+      
+      <guid>https://sailfishc.github.io/tags/sicp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TDD</title>
@@ -72,33 +99,6 @@
       <pubDate>Wed, 30 Oct 2019 09:56:18 +0800</pubDate>
       
       <guid>https://sailfishc.github.io/tags/gitignore/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://sailfishc.github.io/tags/hugo/</link>
-      <pubDate>Thu, 24 Oct 2019 15:05:56 +0800</pubDate>
-      
-      <guid>https://sailfishc.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LeetCode</title>
-      <link>https://sailfishc.github.io/tags/leetcode/</link>
-      <pubDate>Tue, 22 Oct 2019 17:37:00 +0000</pubDate>
-      
-      <guid>https://sailfishc.github.io/tags/leetcode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://sailfishc.github.io/tags/blog/</link>
-      <pubDate>Tue, 22 Oct 2019 16:51:04 +0000</pubDate>
-      
-      <guid>https://sailfishc.github.io/tags/blog/</guid>
       <description></description>
     </item>
     
