@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 21 Mar 2020 19:32:55 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2020 10:28:14 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>常用的生产力工具</title>
+      <link>https://blog.sailfishc.cn/posts/2020/03/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 25 Mar 2020 10:28:14 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/posts/2020/03/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</guid>
+      <description>比较喜欢收集信息，对于APP也会找各种各样的去尝试（不太符合极简风格），从Mac，手机，IPad和Chrome Extension都挺多的，这里的包含了大部分的应用，作为记录。
+ Mac  1Password 7 AdGuard Affinity Designer Affinity Photo AirServer Alfred 3 Anki Bear calibre Charles CheatSheet ClashX CloudMounter Dash Docker Drafts Dropbox Eagle Emacs Evernote feedly Figma Firefox GitKraken Google Chrome HandShaker Hidden Bar IINA iStat Menus iTerm JetBrains Toolbox JustFocus Kap Kawa Kindle MacUpdater Magnet mat Microsoft To Do MindNode Neat Reader NeatDownloadManager Notion OmniGraffle OneDrive PicGo Pliim Postman ScreenFlow Setapp Slack Spotify Station Studio 3T Surge Telegram Lite Typora uPic Visual Studio Code Wireshark zoom.</description>
+    </item>
     
     <item>
       <title>LeetCode189 RotateArray</title>
@@ -76,7 +86,7 @@ OKR是目标+关键结果+任务去实现的
       <pubDate>Fri, 27 Dec 2019 12:03:29 +0800</pubDate>
       
       <guid>https://blog.sailfishc.cn/posts/2019/12/j.u.c-%E5%90%8C%E6%AD%A5%E6%A1%86%E6%9E%B6aqs-%E6%A1%86%E6%9E%B6/</guid>
-      <description>&lt;p&gt;本文转载自：biezhi.com  &lt;a href=&#34;https://www.cnblogs.com/dennyzhangdd/p/7218510.html&#34; target=&#34;_blank&#34;&gt;https://www.cnblogs.com/dennyzhangdd/p/7218510.html&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本文转载自：biezhi.com  &lt;a href=&#34;https://www.cnblogs.com/dennyzhangdd/p/7218510.html&#34;&gt;&lt;a href=&#34;https://www.cnblogs.com/dennyzhangdd/p/7218510.html&#34;&gt;https://www.cnblogs.com/dennyzhangdd/p/7218510.html&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -86,7 +96,7 @@ OKR是目标+关键结果+任务去实现的
       
       <guid>https://blog.sailfishc.cn/posts/2019/12/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8unit-testing%E5%81%A5%E5%A3%AEjava%E4%BB%A3%E7%A0%81/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;前言：&lt;a href=&#34;http://www.yinwang.org/blog-cn/2016/09/14/tests&#34; target=&#34;_blank&#34;&gt;测试的道理&lt;/a&gt;，推荐下王垠的博客，这篇博客不会提高你的测试水平，但是有一些理论和方法上的指导。&lt;/p&gt;
+&lt;p&gt;前言：&lt;a href=&#34;http://www.yinwang.org/blog-cn/2016/09/14/tests&#34;&gt;测试的道理&lt;/a&gt;，推荐下王垠的博客，这篇博客不会提高你的测试水平，但是有一些理论和方法上的指导。&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
@@ -111,25 +121,7 @@ RSS实践  RSS订阅的过程是对自己信息源梳理的过程，我分析了
       <pubDate>Thu, 21 Nov 2019 07:01:41 +0800</pubDate>
       
       <guid>https://blog.sailfishc.cn/posts/2019/11/%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E6%9C%80%E5%85%A8%E7%9A%84redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E4%BB%8B%E7%BB%8D/</guid>
-      <description>目录  分布式锁介绍 分布式锁的应用场景 分布式锁几种实现方式介绍  Redis ZK 数据库  Redis实现分布式锁的实现原理 易宝分布式锁分析 *实现Redis分布式锁的正确操作 实现Redis分布式锁的错误案例 Redis分布式锁的问题 Redisson的原理及Redission的一些讨论 基于Redisson的分布式锁的使用  分布式锁介绍 定义  A distributed lock manager (DLM) runs in every machine in a cluster, with an identical copy of a cluster-wide lock database. In this way a DLM provides software applications which are distributed across a cluster on multiple machines with a means to synchronize their accesses to shared resources .</description>
-    </item>
-    
-    <item>
-      <title>开发人员必备的Docker基础</title>
-      <link>https://blog.sailfishc.cn/posts/2019/11/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BF%85%E5%A4%87%E7%9A%84docker%E5%9F%BA%E7%A1%80/</link>
-      <pubDate>Sun, 10 Nov 2019 16:01:41 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2019/11/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BF%85%E5%A4%87%E7%9A%84docker%E5%9F%BA%E7%A1%80/</guid>
-      <description>Docker简介 说到Docker，我们就来谈谈业务应用从旧时代到Docker的发展历程。
-旧时代 旧时代是基于Application运转的，一台服务器（无虚拟机时代）部署多个Application，不管是Windows还是Linux其实是无法保证在一台服务器上稳定安全的运行多个应用的，CPU，内存等公共资源的竞争导致应用极为不稳定。
-VM阶段 VM让世界变得美好了，VM算是划时代意义的技术，但是VM不是完美的，VM会占用宿主机额外的CPU,RAM和存储（VM不够轻量级），启动慢。
-Linux容器 容器技术出现的比较早，只是Docker将Linux容器技术广泛应用了，Docker解决了VM的问题以外，还有如下优点：
- 容易上手 解决了运维中的环境问题及服务调度的痛点  Docker安装 Docker提供了桌面安装和服务器安装，对于开发来说，我们可以归类为：
- Windows平台 Mac平台 Linux平台：Ubuntu/CentOS  Windows平台 硬件要求：
- win10 64位 启用Hyper-V和容器特性  安装步骤：Install Docker Desktop on Windows | Docker Documentation
- 下载Docker for windows安装包： https://www.docker.com/products/docker-desktop 根据安装向导安装 成功后再CMD中输入docker version查看版本，如果有版本信息表示安装成功  Mac平台 Mac版本和Windows桌面版安装类似，找到下载包，静默安装即可： - 下载地址：下载Docker for windows安装包： https://www.docker.com/products/docker-desktop
-Ubuntu安装  Ubuntu安装：Get Docker Engine - Community for Ubuntu | Docker Documentation  Ubuntu有几种方式安装Docker，我们使用便捷脚本来安装Docker
- 在Linux打开Shell 执行：curl -fsSL https://get.docker.com -o get-docker.</description>
+      <description>目录  分布式锁介绍 分布式锁的应用场景 分布式锁几种实现方式介绍  Redis ZK 数据库   Redis实现分布式锁的实现原理 易宝分布式锁分析 *实现Redis分布式锁的正确操作 实现Redis分布式锁的错误案例 Redis分布式锁的问题 Redisson的原理及Redission的一些讨论 基于Redisson的分布式锁的使用  分布式锁介绍 定义  A distributed lock manager (DLM) runs in every machine in a cluster, with an identical copy of a cluster-wide lock database. In this way a DLM provides software applications which are distributed across a cluster on multiple machines with a means to synchronize their accesses to shared resources .</description>
     </item>
     
   </channel>
