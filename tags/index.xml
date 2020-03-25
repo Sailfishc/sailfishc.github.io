@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 25 Mar 2020 10:28:14 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2020 14:59:49 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>总结</title>
+      <link>https://blog.sailfishc.cn/tags/%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Wed, 25 Mar 2020 14:59:49 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/tags/%E6%80%BB%E7%BB%93/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>APP</title>
@@ -90,15 +99,6 @@
       <pubDate>Sun, 05 Jan 2020 18:09:12 +0800</pubDate>
       
       <guid>https://blog.sailfishc.cn/tags/okr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>juc</title>
-      <link>https://blog.sailfishc.cn/tags/juc/</link>
-      <pubDate>Fri, 27 Dec 2019 12:03:29 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/tags/juc/</guid>
       <description></description>
     </item>
     
