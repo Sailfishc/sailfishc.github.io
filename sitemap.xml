@@ -374,14 +374,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/java/</loc>
+    <loc>https://blog.sailfishc.cn/categories/java/</loc>
     <lastmod>2017-05-24T11:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/java/</loc>
+    <loc>https://blog.sailfishc.cn/tags/java/</loc>
     <lastmod>2017-05-24T11:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -493,14 +493,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/elk/</loc>
+    <loc>https://blog.sailfishc.cn/categories/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/elk/</loc>
+    <loc>https://blog.sailfishc.cn/tags/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -612,14 +612,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/hexo/</loc>
+    <loc>https://blog.sailfishc.cn/categories/hexo/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/hexo/</loc>
+    <loc>https://blog.sailfishc.cn/tags/hexo/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
