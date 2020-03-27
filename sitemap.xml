@@ -10,14 +10,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/life/right-sex/</loc>
+    <loc>https://blog.sailfishc.cn/tags/</loc>
     <lastmod>2020-03-27T22:47:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/</loc>
+    <loc>https://blog.sailfishc.cn/life/right-sex/</loc>
     <lastmod>2020-03-27T22:47:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -360,14 +360,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/mybatis/</loc>
+    <loc>https://blog.sailfishc.cn/categories/mybatis/</loc>
     <lastmod>2019-01-07T21:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/mybatis/</loc>
+    <loc>https://blog.sailfishc.cn/tags/mybatis/</loc>
     <lastmod>2019-01-07T21:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -409,14 +409,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/java/</loc>
+    <loc>https://blog.sailfishc.cn/tags/java/</loc>
     <lastmod>2017-05-24T11:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/java/</loc>
+    <loc>https://blog.sailfishc.cn/categories/java/</loc>
     <lastmod>2017-05-24T11:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -430,14 +430,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/rpc/</loc>
+    <loc>https://blog.sailfishc.cn/categories/rpc/</loc>
     <lastmod>2017-04-29T14:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/rpc/</loc>
+    <loc>https://blog.sailfishc.cn/tags/rpc/</loc>
     <lastmod>2017-04-29T14:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -528,14 +528,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/elk/</loc>
+    <loc>https://blog.sailfishc.cn/categories/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/elk/</loc>
+    <loc>https://blog.sailfishc.cn/tags/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
