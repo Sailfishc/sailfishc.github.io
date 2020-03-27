@@ -4,21 +4,35 @@
   
   <url>
     <loc>https://blog.sailfishc.cn/life/</loc>
-    <lastmod>2020-03-27T21:27:36+08:00</lastmod>
+    <lastmod>2020-03-27T22:47:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/life/right-sex/</loc>
+    <lastmod>2020-03-27T22:47:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.sailfishc.cn/tags/</loc>
-    <lastmod>2020-03-27T21:27:36+08:00</lastmod>
+    <lastmod>2020-03-27T22:47:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/tags/%E6%80%A7%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2020-03-27T22:47:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.sailfishc.cn/</loc>
-    <lastmod>2020-03-27T21:27:36+08:00</lastmod>
+    <lastmod>2020-03-27T22:47:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -395,14 +409,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/java/</loc>
+    <loc>https://blog.sailfishc.cn/categories/java/</loc>
     <lastmod>2017-05-24T11:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/java/</loc>
+    <loc>https://blog.sailfishc.cn/tags/java/</loc>
     <lastmod>2017-05-24T11:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -493,14 +507,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/elasticsearch/</loc>
+    <loc>https://blog.sailfishc.cn/tags/elasticsearch/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/elasticsearch/</loc>
+    <loc>https://blog.sailfishc.cn/categories/elasticsearch/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -514,14 +528,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/elk/</loc>
+    <loc>https://blog.sailfishc.cn/tags/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/elk/</loc>
+    <loc>https://blog.sailfishc.cn/categories/elk/</loc>
     <lastmod>2017-03-31T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -591,14 +605,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://blog.sailfishc.cn/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2017-03-22T22:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://blog.sailfishc.cn/categories/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2017-03-22T22:37:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -647,14 +661,14 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/categories/intellij-idea/</loc>
+    <loc>https://blog.sailfishc.cn/tags/intellij-idea/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/intellij-idea/</loc>
+    <loc>https://blog.sailfishc.cn/categories/intellij-idea/</loc>
     <lastmod>2016-02-28T17:58:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
