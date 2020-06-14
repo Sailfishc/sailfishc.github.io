@@ -134,7 +134,7 @@
             
 
             <div class="post-content">
-                <h2 id="heading">目录</h2>
+                <h2 id="目录">目录</h2>
 <ul>
 <li>分布式锁介绍</li>
 <li>分布式锁的应用场景</li>
@@ -153,8 +153,8 @@
 <li>Redisson的原理及Redission的一些讨论</li>
 <li>基于Redisson的分布式锁的使用</li>
 </ul>
-<h2 id="heading1">分布式锁介绍</h2>
-<h3 id="heading2">定义</h3>
+<h2 id="分布式锁介绍">分布式锁介绍</h2>
+<h3 id="定义">定义</h3>
 <blockquote>
 <p>A <strong>distributed lock manager</strong> (DLM) runs in every machine in a cluster, with an identical copy of a cluster-wide lock database. In this way a DLM provides  <a href="https://en.wikipedia.org/wiki/Software_application">software applications</a>  which are  <a href="https://en.wikipedia.org/wiki/Distributed_programming">distributed</a>  across a cluster on multiple machines with a means to synchronize their accesses to  <a href="https://en.wikipedia.org/wiki/Shared_resource">shared resources</a> .</p>
 </blockquote>
@@ -166,14 +166,14 @@
 <li>文件</li>
 <li>共享内存</li>
 </ul>
-<h3 id="heading3">特性</h3>
+<h3 id="特性">特性</h3>
 <ul>
 <li>互斥性。在任意时刻，只有一个客户端能持有锁。</li>
 <li>不会发生死锁。即使有一个客户端在持有锁的期间崩溃而没有主动解锁，也能保证后续其他客户端能加锁。</li>
 <li>具有容错性。只要大部分的Redis节点正常运行，客户端就可以加锁和解锁。</li>
 <li>解铃还须系铃人。加锁和解锁必须是同一个客户端，客户端自己不能把别人加的锁给解了。</li>
 </ul>
-<h2 id="heading4">分布式锁的应用场景</h2>
+<h2 id="分布式锁的应用场景">分布式锁的应用场景</h2>
 <p>Redis在现在的项目中使用的很多，英国剑桥大学的分布式系统的研究员Martin Kleppmann总结了分布式锁的两个场景：</p>
 <blockquote>
 <ul>
@@ -186,7 +186,7 @@
 <li>效率：使用锁节省去做不必要的相同的事情，例如发送了相同的两封用户邮件，两台机器做相同事的事情。</li>
 <li>正确性：使用分布式锁防止并发进程弄乱系统的状态，如果分布式锁失效，两个并发的节点操作了相同的数据，导致文件损坏，数据永久丢失，会造成严重的问题。</li>
 </ul>
-<h3 id="heading5">实际应用场景</h3>
+<h3 id="实际应用场景">实际应用场景</h3>
 <blockquote>
 <p>场景一</p>
 </blockquote>
@@ -207,7 +207,7 @@
 (2)A渠道系统再调用外部厂商C系统。
 (3)A渠道系统将结果返回给B业务系统。
 这3个过程中，(2)过程，外部厂商的调用时是需要计费的。当B业务系统并发量很高时，有100笔相同的三要素校验，由于是相同的三要素，A渠道只要调用一次厂商即可知道结果。那么A渠道系统如何控制不让100笔请求全部去访问外部厂商C系统呢？可以使用分布式锁</p>
-<h2 id="heading6">分布式锁几种实现方式介绍</h2>
+<h2 id="分布式锁几种实现方式介绍">分布式锁几种实现方式介绍</h2>
 <blockquote>
 <p>分布式锁的操作</p>
 </blockquote>
@@ -220,7 +220,7 @@
 <blockquote>
 <p>为了减少篇幅，下面几种实现方式只考虑lock和unlock的思路。</p>
 </blockquote>
-<h3 id="mysql">MySQL实现分布式锁</h3>
+<h3 id="mysql实现分布式锁">MySQL实现分布式锁</h3>
 <blockquote>
 <p>表结构设计</p>
 </blockquote>
@@ -274,7 +274,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="zk">ZK实现分布式锁</h3>
+<h3 id="zk实现分布式锁">ZK实现分布式锁</h3>
 <p>Zookeeper不太熟悉，但是从Zookeeper的客户端<strong>Curator</strong>官网中查看到实现分布锁的一段代码：</p>
 <pre><code>InterProcessMutex lock = new InterProcessMutex(client, lockPath);
 if ( lock.acquire(maxWait, waitUnit) ) 
@@ -318,7 +318,7 @@ if ( lock.acquire(maxWait, waitUnit) )
 </ul>
 </li>
 </ul>
-<h3 id="redis">Redis实现分布式锁</h3>
+<h3 id="redis实现分布式锁">Redis实现分布式锁</h3>
 <blockquote>
 <p>实现</p>
 </blockquote>
@@ -351,8 +351,8 @@ end
 </ul>
 </li>
 </ul>
-<h2 id="heading7">易宝分布式锁分析</h2>
-<h3 id="heading8">源码分析</h3>
+<h2 id="易宝分布式锁分析">易宝分布式锁分析</h2>
+<h3 id="源码分析">源码分析</h3>
 <ul>
 <li>地址：com.yeepay.utils.lock.impl.RedisLock</li>
 </ul>
@@ -366,7 +366,7 @@ end
 </ul>
 <p>Value唯一是要解决如果安全性，例如clientA删除了clientB的锁的这种情况，setNX PX要放在一条原子指令中是因为如果先设置了NX，在设置PX指令的时候客户端宕机，会发生死锁（锁释放不了的情况）</p>
 <p>释放锁使用了Lua脚本，原因也是Redis目前不支持比对value的值，然后去删除锁的操作，所以使用了Lua脚本来达到一致性的效果，这类似MySQL中使用存储过程一样。</p>
-<h3 id="heading9">易宝分布式锁的一些问题</h3>
+<h3 id="易宝分布式锁的一些问题">易宝分布式锁的一些问题</h3>
 <blockquote>
 <p>expire seconds 单位不正确，不是second，而是millis</p>
 </blockquote>
@@ -374,7 +374,7 @@ end
 </code></pre><blockquote>
 <p>lock方法不太全，将lock方法实现为了tryLock的功能</p>
 </blockquote>
-<h3 id="heading10">错误案例</h3>
+<h3 id="错误案例">错误案例</h3>
 <blockquote>
 <p>错误案例一</p>
 </blockquote>
@@ -415,7 +415,7 @@ end
     return false;
 
 }
-</code></pre><h3 id="redis1">Redis分布式锁的问题分析</h3>
+</code></pre><h3 id="redis分布式锁的问题分析">Redis分布式锁的问题分析</h3>
 <p>既然是分布式系统，那么有几个边界是需要考虑的：</p>
 <ul>
 <li>网络是不可靠的，是有延迟的或者中断的</li>
@@ -439,7 +439,7 @@ end
 <li>Redis主节点挂了，从节点升级为Master，但是由于Redis主从同步是异步的，有可能Master没有将数据同步到Slave</li>
 <li>clientB获取到了锁，clientA和clientB在同一时间访问了共享资源</li>
 </ul>
-<h3 id="redisson">Redisson的原理及如何实现分布式锁</h3>
+<h3 id="redisson的原理及如何实现分布式锁">Redisson的原理及如何实现分布式锁</h3>
 <p>Redis作者对于分布式锁从三个方面来描述如何有效使用分布式锁所需要的三个最低保证：</p>
 <blockquote>
 <ol>
@@ -479,7 +479,7 @@ lock.unlock();
 <li>构造至少5个不同的RLock</li>
 <li>对多个RLock对象进行分组并将它们作为一个锁处理</li>
 </ul>
-<h3 id="heading11">一些后续的话</h3>
+<h3 id="一些后续的话">一些后续的话</h3>
 <p>即便是RedLock这么牛逼算法，还是不完善的，使用DDIA作者提出的问题分析下：</p>
 <p><img src="https://raw.githubusercontent.com/Sailfishc/picRepo/master/XhLmcL.png" alt="Redis分布式锁的问题"></p>
 <p>还是之前的一个例子：</p>
@@ -524,7 +524,7 @@ lock.unlock();
 <li>NTP自动调整:这个可以通过一定的优化，把跳跃时间控制的可控范围内，虽然会跳跃，但是是完全可以接受的。</li>
 </ul>
 <p>最后Martin认为Redis说的也有道理，但是Redis的分布式锁实现方式还是有问题的，这可能也是TradeOff的魅力吧，Martin是学术流派，从他的书和博客中也可以看出他的参考资料偏Paper，Redis作者是实战派，虽然Redis理论上还是有些问题，但是在目前还是使用比较广泛，这可能就是虽然不完美，但是还是要接受她吧。</p>
-<h2 id="heading12">参考资料</h2>
+<h2 id="参考资料">参考资料</h2>
 <ul>
 <li><a href="https://redis.io/topics/distlock">Distributed locks with Redis – Redis</a></li>
 <li><a href="https://github.com/TaXueWWL/redis-distributed-lock">GitHub - TaXueWWL/redis-distributed-lock: redis分布式锁工具包，提供纯Java方式调用，支持传统Spring工程，  为spring boot应用提供了starter，更方便快捷的调用。</a></li>

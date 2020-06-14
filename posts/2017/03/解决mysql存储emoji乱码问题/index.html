@@ -149,7 +149,7 @@
 <li><a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html">字符编码笔记</a></li>
 </ul>
 <p>总的就一句话，UTF-8是Unicode的一种实现。</p>
-<h2 id="emoji">一、如何解决Emoji存储问题</h2>
+<h2 id="一如何解决emoji存储问题">一、如何解决Emoji存储问题</h2>
 <ul>
 <li><a href="https://github.com/Sailfishc/emoji-demo">Github地址解决方案</a></li>
 </ul>
@@ -159,13 +159,13 @@
 <li>读取的时候可以将😄这个字符转为😁</li>
 </ul>
 <p>例如： 😁 我可以存储为😄，😭存储为😢，等等，可以这样映射起来。</p>
-<h3 id="1">1、引入依赖</h3>
+<h3 id="1引入依赖">1、引入依赖</h3>
 <pre><code>&lt;dependency&gt;
      &lt;groupId&gt;com.vdurmont&lt;/groupId&gt;
      &lt;artifactId&gt;emoji-java&lt;/artifactId&gt;
     &lt;version&gt;3.2.0&lt;/version&gt;
 &lt;/dependency&gt;
-</code></pre><h3 id="2api">2、常用API</h3>
+</code></pre><h3 id="2常用api">2、常用API</h3>
 <pre><code>    @RequestMapping(&quot;/add/content&quot;)
     public ResponseEntity insertContent(@RequestBody Content content) {
         String title = content.getTitle();
@@ -195,7 +195,7 @@
 <li>EmojiParser.parseToAliases(string); 将表情符号转为字符</li>
 <li>EmojiParser.parseToUnicode(string); 将字符转为表情符号</li>
 </ul>
-<h3 id="3">3、案例</h3>
+<h3 id="3案例">3、案例</h3>
 <ul>
 <li>存储图片</li>
 </ul>

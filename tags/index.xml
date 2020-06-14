@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 27 Mar 2020 22:47:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 21:16:05 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bot</title>
+      <link>https://blog.sailfishc.cn/tags/bot/</link>
+      <pubDate>Sun, 14 Jun 2020 21:16:05 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/tags/bot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RSS</title>
+      <link>https://blog.sailfishc.cn/tags/rss/</link>
+      <pubDate>Sun, 14 Jun 2020 21:16:05 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/tags/rss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TG</title>
+      <link>https://blog.sailfishc.cn/tags/tg/</link>
+      <pubDate>Sun, 14 Jun 2020 21:16:05 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/tags/tg/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>性知识</title>
@@ -72,33 +99,6 @@
       <pubDate>Wed, 25 Mar 2020 10:28:14 +0800</pubDate>
       
       <guid>https://blog.sailfishc.cn/tags/app/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productive</title>
-      <link>https://blog.sailfishc.cn/tags/productive/</link>
-      <pubDate>Wed, 25 Mar 2020 10:28:14 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/tags/productive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://blog.sailfishc.cn/tags/python/</link>
-      <pubDate>Sun, 08 Mar 2020 18:48:42 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Schema</title>
-      <link>https://blog.sailfishc.cn/tags/schema/</link>
-      <pubDate>Sun, 08 Mar 2020 18:48:42 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/tags/schema/</guid>
       <description></description>
     </item>
     

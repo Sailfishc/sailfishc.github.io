@@ -155,7 +155,7 @@ dubbo作为一种服务治理框架，RPC作为其中的内部通信方式，使
 <blockquote>
 <p>之后就萌生了写一篇关于RPC的文章。</p>
 </blockquote>
-<h2 id="rpc">一、RPC的基本概念</h2>
+<h2 id="一rpc的基本概念">一、RPC的基本概念</h2>
 <p>RPC，即 Remote Procedure Call（远程过程调用），说得通俗一点就是：调用远程计算机上的服务，就像调用本地服务一样。
 RPC的实现包含了两部分，一部分是客户端，一部分是服务端，服务的调用方发送RPC请求到服务提供方，服务提供方根据参数执行方法，响应客户端，一次RPC请求结束。
 这篇文章解释的不错：<a href="https://www.zhihu.com/question/25536695">通俗的语言解释什么是 RPC 框架</a></p>
@@ -186,8 +186,8 @@ public class CityDubboConsumerService {
 </code></pre><ul>
 <li>在不理解RPC概念的情况下，会认为RPC就只有这种应用，其实开发中经常使用的HTTPClient调用也是属于RPC的一种方式。</li>
 </ul>
-<h2 id="rpc1">二、RPC的使用</h2>
-<h3 id="1tcp">1、基于TCP的远程调用</h3>
+<h2 id="二rpc的使用">二、RPC的使用</h2>
+<h3 id="1基于tcp的远程调用">1、基于TCP的远程调用</h3>
 <ul>
 <li>服务消费者</li>
 </ul>
@@ -288,7 +288,7 @@ public class CityDubboConsumerService {
 	}
 
 }
-</code></pre><h3 id="2http">2、基于HTTP的远程调用</h3>
+</code></pre><h3 id="2基于http的远程调用">2、基于HTTP的远程调用</h3>
 <ul>
 <li>基础服务接口</li>
 </ul>
@@ -468,7 +468,7 @@ public class CityDubboConsumerService {
 		resp.getWriter().write(json);
 	}
 }
-</code></pre><h3 id="3url">3、URL风格</h3>
+</code></pre><h3 id="3url风格">3、URL风格</h3>
 <ul>
 <li>RPC风格的URL</li>
 <li>RESTFUL风格的URL</li>
@@ -488,7 +488,7 @@ public class CityDubboConsumerService {
 GET http://hostname/people/zhangsan 返回name为zhangsan的people记录
 PUT http://hostname/people/zhangsan 提交name为zhangsan的people记录更新 
 DELETE http://hostname/people/zhangsan 删除name为zhangsan的people记录
-</code></pre><h2 id="heading">三、总结</h2>
+</code></pre><h2 id="三总结">三、总结</h2>
 <blockquote>
 <ul>
 <li>本文内容部分摘自《大型分布式网站架构》</li>

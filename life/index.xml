@@ -77,7 +77,7 @@ OKR是目标+关键结果+任务去实现的
       
       <guid>https://blog.sailfishc.cn/life/rss-basic/</guid>
       <description>目录  前言 介绍RSS RSS的背后的逻辑论述 RSS实践 总结 参考资源  前言 其实知道RSS也挺久了，但是一直没应用起来，今天正式的了解了一下，发现RSS其实是很能创造生产力的一种工具。
-介绍RSS  RSS (originally ** Site Summary** RDF ; later, two competing approaches emerged, which used the backronyms Rich Site Summary and Really Simple Syndication respectively) [2] is a type of web feed [3] which allows users and applications to access updates to websites in a standardized, computer-readable format
+介绍RSS  RSS (originally ** Site Summary** RDF ; later, two competing approaches emerged, which used the backronyms **Rich Site Summary** and **Really Simple Syndication** respectively) [2] is a type of web feed [3] which allows users and applications to access updates to websites in a standardized, computer-readable format
  简单来说：RSS指的是允许以标准化计算机可读的方式让用户和应用程序访问网站更新。
 RSS的背后的逻辑论述 RSS的机制和软件设计中的一些方式很像：publish/subscribe发布订阅模式，用户作为服务的消费者，是采用主动去拉取（pull）源信息，还是被动的接收（push）信息，也是一个TradeOff的过程，很明显，对于用户来说，人不能像机器，定时的去（pull）数据下来，因为这样太浪费精力，所以RSS订阅的方式出现，提高了生产力。
 可能大家都被这种情况困扰过，接收信息的渠道太多，技术博客，新闻网站，某个关注的人的网站，YouTube频道，某个关注的Twitter动态，关注的UP主的直播，购物网站的商品优惠活动，在现在这样信息满天飞，贩卖焦虑的时期，我们要学会过滤信息，只关注自己关心的优质的内容，并且是可学习的，随着时间的变化，我们只保留了这些最优质的的，和自己最匹配的内容，我们每个人在一天的精力都是有限的，不能在每一天都挨个打开各类APP，去浏览信息，去让我们的碎片时间消耗掉，到最后接受了太多的垃圾信息，没有将信息转化为知识，还消耗了一天的精力。

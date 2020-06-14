@@ -149,7 +149,7 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 <blockquote>
 <p>本篇将会讲解MyBatis（Spring-MyBatis）的一些关键类，以及关于DB操作的内容</p>
 </blockquote>
-<h2 id="heading">关键类</h2>
+<h2 id="关键类">关键类</h2>
 <ul>
 <li>SqlSessionFactory</li>
 <li>SqlSessionFactoryBean</li>
@@ -159,7 +159,7 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 <li>SqlSessionTemplate</li>
 <li>MapperScannerConfigurer</li>
 </ul>
-<h2 id="heading1">如何访问数据库</h2>
+<h2 id="如何访问数据库">如何访问数据库</h2>
 <p><code>mysql -uadmin -pxxx -h58.87.87.129 -P32007</code></p>
 <p>当我们需要连接MySQL时，需要用到几个属性：</p>
 <ul>
@@ -189,7 +189,7 @@ public class UserService { @Resource private UserMapper userMapper; } 那这其�
 	private UserMapper userMapper;
 }
 </code></pre><p>那这其中究竟是怎么做到这样简化的呢？</p>
-<h2 id="heading2">实现细节</h2>
+<h2 id="实现细节">实现细节</h2>
 <h3 id="sqlsessionfactorybeansqlsessionfactory">SqlSessionFactoryBean&amp;SqlSessionFactory</h3>
 <p>上面介绍了关键类<code>SqlSession</code>, 那如何创建<code>SqlSession</code>呢？MyBatis使用了工厂方法来创建<code>SqlSession</code>，由于工厂和SqlSession是一对多的关系，也就是说一个Factory可以创建多个SqlSession，MyBatis-Spring将SqlSessionFactory放入了容器的生命周期中，也就出现了SqlSessionFactoryBean，我们一般这样配置：</p>
 <pre><code>&lt;bean id=&quot;sqlSessionFactory&quot; class=&quot;org.mybatis.spring.SqlSessionFactoryBean&quot;&gt;

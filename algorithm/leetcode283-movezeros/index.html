@@ -135,7 +135,7 @@
             
 
             <div class="post-content">
-                <h2 id="heading">题目解读</h2>
+                <h2 id="题目解读">题目解读</h2>
 <pre><code>Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
 Example:
@@ -155,7 +155,7 @@ Note:
 <li>不使用新的数组</li>
 <li>最少的操作数（操作数指的是对数组的赋值操作）</li>
 </ul>
-<h2 id="heading1">思路</h2>
+<h2 id="思路">思路</h2>
 <blockquote>
 <p>这道题难度是easy，思路也比较简单，有点类似快慢指针的做法</p>
 </blockquote>
@@ -167,7 +167,7 @@ Note:
 <li>直到index遍历结束</li>
 <li>这个时候nonZero的之前的元素已经是数组中全部不为0的数了，只需要把(nonZero, 数组长度)的值赋值为0即可</li>
 </ul>
-<h2 id="heading2">代码</h2>
+<h2 id="代码">代码</h2>
 <pre><code>public void moveZeroes(int[] nums) {
     if (nums == null || nums.length == 0){
         return;

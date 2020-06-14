@@ -146,7 +146,7 @@ Jenkins大概就这么工作：
 
             <div class="post-content">
                 <p><img src="http://upload-images.jianshu.io/upload_images/734456-9d9aa000a2176fa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h2 id="heading">一、前言</h2>
+<h2 id="一前言">一、前言</h2>
 <p>公司一直使用的是Java语言进行开发，自然而然逐渐的使用SpringBoot替代原来的框架，特别是对于现在的spring cloud微服务来说，一个项目由多个小项目组成，每个小项目都独立部署，使用jenkins是最好的部署和管理工具了。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-727fcd1dd174863b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>Jenkins大概就这么工作：</p>
@@ -155,7 +155,7 @@ Jenkins大概就这么工作：
 <li>然后使用Maven/Ant/Gradle等构件工具进行Build</li>
 <li>构建成功之后会进行部署（deploy）</li>
 </ul>
-<h2 id="heading1">二、安装</h2>
+<h2 id="二安装">二、安装</h2>
 <ul>
 <li><a href="https://jenkins.io/index.html">Jenkins官网</a></li>
 <li>下载War包或者Jar包都可以（推荐war包，适合新手，也比较稳定）</li>
@@ -183,17 +183,17 @@ Jenkins大概就这么工作：
 <li>插件列表（太多不一一列出）</li>
 </ul>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-ba5e79a14fc8f11f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h2 id="heading2">三、配置</h2>
+<h2 id="三配置">三、配置</h2>
 <blockquote>
 <p>此处省略jdk(请注意服务器上需要安装jdk，而不是jre)、maven、git的安装</p>
 </blockquote>
-<h3 id="1">1、系统配置</h3>
+<h3 id="1系统配置">1、系统配置</h3>
 <p>在系统管理中找到Global Tool Configurations,其中包含jdk、git、maven等工具的配置</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-6b6ad974687749b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-e6630d187141a908.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-c442bc89ef0430d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>注意： 请勾掉自动安装，自己手动安装以上工具后再进行配置</p>
-<h2 id="heading3">三、新建项目</h2>
+<h2 id="三新建项目">三、新建项目</h2>
 <p>这里我们选择创建Maven项目：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-f1f3c101baba2e12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>如果在源码管理中出现如下红色代码，说明是本机的用户没有配置Git用户授权</p>
@@ -203,11 +203,11 @@ Jenkins大概就这么工作：
 <blockquote>
 <p>备注：Passphrase这里不用填值，这是自动生成的。
 如何配置Git ssh解决上述ssh key问题，可参考以下教程链接
-<a href="http://www.linuxidc.com/Linux/2014-10/108080.htm"><a href="http://www.linuxidc.com/Linux/2014-10/108080.htm">http://www.linuxidc.com/Linux/2014-10/108080.htm</a></a></p>
+<a href="http://www.linuxidc.com/Linux/2014-10/108080.htm">http://www.linuxidc.com/Linux/2014-10/108080.htm</a></p>
 </blockquote>
 <p>配置成功后选择配置的用户，就发现已经没有红色的提示，说明ssh key配置成功了
 <img src="http://upload-images.jianshu.io/upload_images/734456-9aca3e863f2438bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h3 id="11">1、构建</h3>
+<h3 id="1构建">1、构建</h3>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-f8aad83a9637aca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <blockquote>
 <p>备注：这里的Root Pom指的是根目录下的Pom文件</p>
@@ -216,10 +216,10 @@ Jenkins大概就这么工作：
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-5d60696a8822d328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>如果为图二结构，Root Pom为：project_A/pom.xml</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-1fc8d3ad36650808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h3 id="2">2、授权服务器</h3>
+<h3 id="2授权服务器">2、授权服务器</h3>
 <p>打开jenkins首页，点击系统管理&ndash;系统设置，下拉找到找到publish over ssh,进行以下设置（请确保前面的步骤中publish over ssh插件已经安装成功，如果没有发现，那就是还没有安装成功，请返回去安装）。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-91e845ed76874d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h3 id="3jar">3、部署Jar包</h3>
+<h3 id="3部署jar包">3、部署Jar包</h3>
 <p>进入上面的已经创建好的jenkinsWeb项目，点击配置，下拉找到Post Steps进行配置。</p>
 <p>１、点击</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-a4f2907d49e74db5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png">
@@ -264,7 +264,7 @@ nohup ${JAVA_HOME}/bin/java -jar search-1.0-SNAPSHOT.jar &gt; /dev/null &amp;
 echo &quot;启动成功...&quot;
 </code></pre><p>这样就可以将jar包打到远程服务器了</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-7bee1d38208a4082.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<h3 id="4wartomcat">4、部署War包容器（tomcat）中</h3>
+<h3 id="4部署war包容器tomcat中">4、部署War包容器（tomcat）中</h3>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-c0f207c324028f18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>如果容器是tomcat，就需要在tomcat配置相应的用户名和密码：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/734456-63057a4157bef0eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
