@@ -27,7 +27,7 @@
 </blockquote>
 <p>之前一直在用的是<code>Feedly</code>，但是用着用着<code>Feedly</code>打开的频率越来越低了，后来看到木子在用<code>Telegram</code>做了RSS，我也就比较趋向于这种方式了，这篇文章就不介绍RSS的一些概念了，就直接开始展示工作流以及如何使用吧，奥利给！</p>
 <h2 id="基础流程">基础流程</h2>
-<p><img src="sail-blog.oss-cn-beijing.aliyuncs.com/uPic/6xQZHF.jpg" alt="RSS基础流程"></p>
+<p><img src="static.sailfishc.cn/uPic/6xQZHF.jpg" alt="RSS基础流程"></p>
 <ul>
 <li>其中带颜色的是需要自己部署的</li>
 </ul>
@@ -100,7 +100,7 @@ networks:
 <li><code>docker-compose up -d</code></li>
 </ul>
 <h3 id="成果啦">成果啦</h3>
-<p><img src="sail-blog.oss-cn-beijing.aliyuncs.com/uPic/41Lcvz.jpg" alt="订阅成功"></p>
+<p><img src="static.sailfishc.cn/uPic/41Lcvz.jpg" alt="订阅成功"></p>
 <h3 id="最后">最后</h3>
 <p>RSS的RSS Bot解决了如何抓取订阅的博客或者网站，其中还有一个比较重要的就是有些内容是不支持RSS的，这个时候可以配合<code>RSSHub</code>来使用，利用<code>RSSHub</code>获取到内容的Rss地址，再利用今天介绍的工具将其加入TG链中。</p>
 <ul>
