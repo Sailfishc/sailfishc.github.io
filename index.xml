@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 14 Jun 2020 21:16:05 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2020 16:43:26 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>生活的小TIPS</title>
+      <link>https://blog.sailfishc.cn/life/life-tip/</link>
+      <pubDate>Tue, 16 Jun 2020 16:43:26 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/life/life-tip/</guid>
+      <description>前言 回想起几年前自己想要坚持下来的事情，现在还是这样，如果每周做两道算法题，现在也算是算法大牛了吧，生活中总有一些事情偷偷溜走，这次手上起了一些小泡，记得之前有找医生看过，但是现在又忘了，所以相信时间的力量，将这些小的TIPS记录下来，以后翻看，也能有些许收获。
+湿疹 最近手上起了一些红点点，比较痒，突然起来，过一会又下去了，之前其实有出现过，只是自己也没有注意，这次我咨询了一下医生，医生建议使用派瑞松就可以，我又查了一下相关的资料，发现了湿疹的一些知识
+ 湿疹是是一种过敏反应，处于机体的自我保护 湿疹不是太湿了，而是太干 湿疹不能捂着 湿疹不能立即治愈，治疗湿疹是一个长期工作   治疗方案
+  使用一些低敏的保湿乳肤霜即可，然后大量涂抹，常见的有  凡士林 协和硅霜 丝塔芙/雅漾的一些护手霜 儿童使用的郁美净    参考资料  宝宝湿疹怎么办？我终于治好了我宝宝的湿疹！ - 知乎 好好「吃药」：盘点那些你所忽视的家庭用药误区  </description>
+    </item>
     
     <item>
       <title>利用Telegram订阅RSS</title>
@@ -149,17 +161,6 @@
       <description>这道题最开始看其实思路比较简单，但是做的时候发现实现还是挺麻烦的，题目的难度也是Hard，先说说自己做这道题目最开始的一个思路：
  为了方便描述，把输入定义为[1,3,-1,-3,5,3,6,7], k = 3 滑动窗口的移动有两种情况，一种是从窗口从索引0 -&amp;gt; 2移动，另外一种就是窗口长度已经是3之后的窗口移动   下面是自己最开始的思考过程，自己第一遍没有做出来，但是思路是比较接近答案的，这也就是算法中如果没有好的数据结构代码会写的又长又臭的原因
   第一步：对于[1,3,-1]的处理 第二步：对于最大值的处理，最开始想到的是定义一个max变量，然后使用Math.max(max, nums[i])这种方式去处理 第三步：移动窗口，用新进入窗口和上一个窗口最大值作比较，但是这一步有一种特殊情况，那就是得处理上一个窗口移出的值是不是最大值，比如[3,-1,-3中最大值是3，但是移动后，3已经被移除了，当前窗口的最大值是-1，为了解决这给问题自己最开始的思路是添加一个变量去记录是不是上一个窗口的第一个元素  解法一 public static int[] maxSlidingWindow(int[] nums, int k) { if (nums == null || nums.length == 0 || nums.length &amp;lt; k) { return new int[0]; } Deque&amp;lt;Integer&amp;gt; deque = new LinkedList&amp;lt;&amp;gt;(); int[] res = new int[nums.length + 1 - k]; for (int I = 0; I &amp;lt; nums.length; I++) { if (!</description>
-    </item>
-    
-    <item>
-      <title>如何学习SICP</title>
-      <link>https://blog.sailfishc.cn/posts/2020/03/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0sicp/</link>
-      <pubDate>Sun, 08 Mar 2020 18:48:42 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2020/03/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0sicp/</guid>
-      <description>这是一篇资源篇，主要是整理了SICP课程的一些资源，包含了Python版的资源和Schema资源，这篇博客主要从几个方面来介绍如何去学习SICP：
-  为什么要学习SICP SICP选择Python版还是Schema版本  为什么要学习SICP 先看下国外一些大神是如何评价SICP的：
- I’ve only ever seen one great book on the subject of computer programming: Structure and Interpretation of Computer Programs (Abelson and Sussman; MIT Press). If you’re already a great programmer, it will take you an evening to read the first few chapters and you’ll discover a precision vocabulary for discussing what you’ve spent 10 years learning the hard way. If you’re not already a great programmer, I would have thought that these few chapters would save you from having to spend years flailing around in the dark.</description>
     </item>
     
   </channel>

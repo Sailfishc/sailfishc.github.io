@@ -3,6 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.sailfishc.cn/life/</loc>
+    <lastmod>2020-06-16T16:43:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/tags/</loc>
+    <lastmod>2020-06-16T16:43:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/</loc>
+    <lastmod>2020-06-16T16:43:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/tags/%E6%B9%BF%E7%96%B9/</loc>
+    <lastmod>2020-06-16T16:43:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2020-06-16T16:43:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/life/life-tip/</loc>
+    <lastmod>2020-06-16T16:43:26+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sailfishc.cn/tags/bot/</loc>
     <lastmod>2020-06-14T21:16:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -24,13 +66,6 @@
   </url>
   
   <url>
-    <loc>https://blog.sailfishc.cn/tags/</loc>
-    <lastmod>2020-06-14T21:16:05+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.sailfishc.cn/tags/tg/</loc>
     <lastmod>2020-06-14T21:16:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -40,20 +75,6 @@
   <url>
     <loc>https://blog.sailfishc.cn/posts/2020/06/%E5%88%A9%E7%94%A8telegram%E8%AE%A2%E9%98%85rss/</loc>
     <lastmod>2020-06-14T21:16:05+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sailfishc.cn/</loc>
-    <lastmod>2020-06-14T21:16:05+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sailfishc.cn/life/</loc>
-    <lastmod>2020-03-27T22:47:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
