@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 21 Jun 2020 11:53:04 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 21:06:09 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.sailfishc.cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>基本的Linux命令</title>
+      <link>https://blog.sailfishc.cn/posts/2020/06/%E5%9F%BA%E6%9C%AC%E7%9A%84linux%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 21 Jun 2020 21:06:09 +0800</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/posts/2020/06/%E5%9F%BA%E6%9C%AC%E7%9A%84linux%E5%91%BD%E4%BB%A4/</guid>
+      <description> 可能学习Linux最好的方式是自己搭建科学上网的时候去学习吧😑
+ 权限  创建用户：sudo useradd -m -s /bin/bash username 设置密码：sodu passwd username 将用户加入sudo组：sudo usermod -G sudo username 切换用户：su -l username   如果没有sudo组，可以使用
+ 添加sudo组： sudo groupadd sudo 将sudo组加入sudoer：sudo visudo 配置：%sudo ALL=(ALL:ALL) ALL  配置进行免密：%sudo ALL=ALL NOPASSWD:ALL    给用户&amp;amp;用户组设置某个文件&amp;amp;文件夹的权限：sudo chown -R acme:acme /etc/xx/live 设置文件&amp;amp;文件夹的读写权限：chmod -R 750 /etc/letsencrypt/live  包管理  安装包：sudo yum install -y curl 服务管理：  启动服务： sudo systemctl start crond 设置自启动服务（如果服务器挂了重启之后再次启动应用）：sudo systemctl enable crond 重启服务： sudo systemctl restart nginx    目录管理  创建多个文件夹：sudo mkdir -p /etc/xx/live  文本编辑&amp;amp;查看  vi vim nano  服务信息  查看内核版本：uname -a  资料参考  写代码怎能不会这些 Linux 命令？ | 编程和酒  </description>
+    </item>
     
     <item>
       <title>程序员PPT写作指南</title>
@@ -160,15 +171,6 @@
       <guid>https://blog.sailfishc.cn/posts/2020/03/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</guid>
       <description>比较喜欢收集信息，对于APP也会找各种各样的去尝试（不太符合极简风格），从Mac，手机，IPad和Chrome Extension都挺多的，这里的包含了大部分的应用，作为记录。
  Mac  1Password 7 AdGuard Affinity Designer Affinity Photo AirServer Alfred 3 Anki Bear calibre Charles CheatSheet ClashX CloudMounter Dash Docker Drafts Dropbox Eagle Emacs Evernote feedly Figma Firefox GitKraken Google Chrome HandShaker Hidden Bar IINA iStat Menus iTerm JetBrains Toolbox JustFocus Kap Kawa Kindle MacUpdater Magnet mat Microsoft To Do MindNode Neat Reader NeatDownloadManager Notion OmniGraffle OneDrive PicGo Pliim Postman ScreenFlow Setapp Slack Spotify Station Studio 3T Surge Telegram Lite Typora uPic Visual Studio Code Wireshark zoom.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode189 RotateArray</title>
-      <link>https://blog.sailfishc.cn/algorithm/leetcode189-rotatearray/</link>
-      <pubDate>Sat, 21 Mar 2020 19:32:55 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/algorithm/leetcode189-rotatearray/</guid>
-      <description>Given an array, rotate the array to the right by k steps, where k is non-negative. Example 1: Input: [1,2,3,4,5,6,7] and k = 3 Output: [5,6,7,1,2,3,4] Explanation: rotate 1 steps to the right: [7,1,2,3,4,5,6] rotate 2 steps to the right: [6,7,1,2,3,4,5] rotate 3 steps to the right: [5,6,7,1,2,3,4] Example 2: Input: [-1,-100,3,99] and k = 2 Output: [3,99,-1,-100] Explanation: rotate 1 steps to the right: [99,-1,-100,3] rotate 2 steps to the right: [3,99,-1,-100] Note: Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.</description>
     </item>
     
   </channel>

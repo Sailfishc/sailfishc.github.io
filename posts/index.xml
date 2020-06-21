@@ -6,8 +6,72 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 14 Jun 2020 21:16:05 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 21 Jun 2020 21:06:09 +0800</lastBuildDate>
         <atom:link href="https://blog.sailfishc.cn/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>基本的Linux命令</title>
+            <link>https://blog.sailfishc.cn/posts/2020/06/%E5%9F%BA%E6%9C%AC%E7%9A%84linux%E5%91%BD%E4%BB%A4/</link>
+            <pubDate>Sun, 21 Jun 2020 21:06:09 +0800</pubDate>
+            
+            <guid>https://blog.sailfishc.cn/posts/2020/06/%E5%9F%BA%E6%9C%AC%E7%9A%84linux%E5%91%BD%E4%BB%A4/</guid>
+            <description> 可能学习Linux最好的方式是自己搭建科学上网的时候去学习吧😑
+ 权限  创建用户：sudo useradd -m -s /bin/bash username 设置密码：sodu passwd username 将用户加入sudo组：sudo usermod -G sudo username 切换用户：su -l username   如果没有sudo组，可以使用
+ 添加sudo组： sudo groupadd sudo 将sudo组加入sudoer：sudo visudo 配置：%sudo ALL=(ALL:ALL) ALL  配置进行免密：%sudo ALL=ALL NOPASSWD:ALL    给用户&amp;amp;用户组设置某个文件&amp;amp;文件夹的权限：sudo chown -R acme:acme /etc/xx/live 设置文件&amp;amp;文件夹的读写权限：chmod -R 750 /etc/letsencrypt/live  包管理  安装包：sudo yum install -y curl 服务管理：  启动服务： sudo systemctl start crond 设置自启动服务（如果服务器挂了重启之后再次启动应用）：sudo systemctl enable crond 重启服务： sudo systemctl restart nginx    目录管理  创建多个文件夹：sudo mkdir -p /etc/xx/live  文本编辑&amp;amp;查看  vi vim nano  服务信息  查看内核版本：uname -a  资料参考  写代码怎能不会这些 Linux 命令？ | 编程和酒  </description>
+            <content type="html"><![CDATA[<blockquote>
+<p>可能学习Linux最好的方式是自己搭建科学上网的时候去学习吧😑</p>
+</blockquote>
+<h2 id="权限">权限</h2>
+<ul>
+<li>创建用户：<code>sudo useradd -m -s /bin/bash username</code></li>
+<li>设置密码：<code>sodu passwd username</code></li>
+<li>将用户加入<code>sudo</code>组：<code>sudo usermod -G sudo username</code></li>
+<li>切换用户：<code>su -l username</code></li>
+</ul>
+<blockquote>
+<p>如果没有sudo组，可以使用</p>
+<ol>
+<li>添加sudo组： <code>sudo groupadd sudo</code></li>
+<li>将sudo组加入<code>sudoer</code>：<code>sudo visudo</code></li>
+<li>配置：<code>%sudo   ALL=(ALL:ALL) ALL </code></li>
+<li>配置进行免密：<code>%sudo ALL=ALL NOPASSWD:ALL</code></li>
+</ol>
+</blockquote>
+<ul>
+<li>给用户&amp;用户组设置某个文件&amp;文件夹的权限：<code>sudo chown -R acme:acme /etc/xx/live</code></li>
+<li>设置文件&amp;文件夹的读写权限：<code>chmod -R 750 /etc/letsencrypt/live</code></li>
+</ul>
+<h2 id="包管理">包管理</h2>
+<ul>
+<li>安装包：<code>sudo yum install -y curl</code></li>
+<li>服务管理：
+<ul>
+<li>启动服务： <code>sudo systemctl start crond</code></li>
+<li>设置自启动服务（如果服务器挂了重启之后再次启动应用）：<code>sudo systemctl enable crond</code></li>
+<li>重启服务： <code>sudo systemctl restart nginx</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="目录管理">目录管理</h2>
+<ul>
+<li>创建多个文件夹：<code>sudo mkdir -p /etc/xx/live</code></li>
+</ul>
+<h2 id="文本编辑查看">文本编辑&amp;查看</h2>
+<ul>
+<li>vi</li>
+<li>vim</li>
+<li>nano</li>
+</ul>
+<h2 id="服务信息">服务信息</h2>
+<ul>
+<li>查看内核版本：<code>uname -a</code></li>
+</ul>
+<h2 id="资料参考">资料参考</h2>
+<ul>
+<li><a href="https://blog.biezhi.me/2017/08/write-code-must-linux-command.html">写代码怎能不会这些 Linux 命令？ | 编程和酒</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>利用Telegram订阅RSS</title>
