@@ -3,22 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.sailfishc.cn/tags/coder/</loc>
+    <lastmod>2020-06-21T11:53:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sailfishc.cn/life/</loc>
-    <lastmod>2020-06-16T16:43:26+08:00</lastmod>
+    <lastmod>2020-06-21T11:53:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/tags/ppt/</loc>
+    <lastmod>2020-06-21T11:53:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.sailfishc.cn/tags/</loc>
-    <lastmod>2020-06-16T16:43:26+08:00</lastmod>
+    <lastmod>2020-06-21T11:53:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.sailfishc.cn/</loc>
-    <lastmod>2020-06-16T16:43:26+08:00</lastmod>
+    <lastmod>2020-06-21T11:53:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.sailfishc.cn/life/how-to-write-ppt-for-coder/</loc>
+    <lastmod>2020-06-21T11:53:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
