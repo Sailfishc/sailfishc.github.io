@@ -22,12 +22,12 @@
 
 
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
 
 
-<link rel="stylesheet" href="https://blog.sailfishc.cn/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="https://blog.sailfishc.cn/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
 
 
 
@@ -41,24 +41,30 @@
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
+
+
 <meta itemprop="name" content=" LeetCode 239. Sliding Window Maximum ">
 <meta itemprop="description" content="这道题最开始看其实思路比较简单，但是做的时候发现实现还是挺麻烦的，题目的难度也是Hard，先说说自己做这道题目最开始的一个思路：
  为了方便描述，把输入定义为[1,3,-1,-3,5,3,6,7], k = 3 滑动窗口的移动有两种情况，一种是从窗口从索引0 -&gt; 2移动，另外一种就是窗口长度已经是3之后的窗口移动   下面是自己最开始的思考过程，自己第一遍没有做出来，但是思路是比较接近答案的，这也就是算法中如果没有好的数据结构代码会写的又长又臭的原因
   第一步：对于[1,3,-1]的处理 第二步：对于最大值的处理，最开始想到的是定义一个max变量，然后使用Math.max(max, nums[i])这种方式去处理 第三步：移动窗口，用新进入窗口和上一个窗口最大值作比较，但是这一步有一种特殊情况，那就是得处理上一个窗口移出的值是不是最大值，比如[3,-1,-3中最大值是3，但是移动后，3已经被移除了，当前窗口的最大值是-1，为了解决这给问题自己最开始的思路是添加一个变量去记录是不是上一个窗口的第一个元素  解法一 public static int[] maxSlidingWindow(int[] nums, int k) { if (nums == null || nums.length == 0 || nums.length &lt; k) { return new int[0]; } Deque&lt;Integer&gt; deque = new LinkedList&lt;&gt;(); int[] res = new int[nums.length &#43; 1 - k]; for (int I = 0; I &lt; nums.length; I&#43;&#43;) { if (!">
-<meta itemprop="datePublished" content="2020-03-14T16:34:51&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-14T16:34:51&#43;08:00" />
+<meta itemprop="datePublished" content="2020-03-14T16:34:51+08:00" />
+<meta itemprop="dateModified" content="2020-03-14T16:34:51+08:00" />
 <meta itemprop="wordCount" content="186">
 <meta itemprop="image" content="https://blog.sailfishc.cn/"/>
 
 
 
-<meta itemprop="keywords" content="LeetCode,算法," /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="LeetCode,算法," />
+
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.sailfishc.cn/"/>
 
 <meta name="twitter:title" content=" LeetCode 239. Sliding Window Maximum "/>
 <meta name="twitter:description" content="这道题最开始看其实思路比较简单，但是做的时候发现实现还是挺麻烦的，题目的难度也是Hard，先说说自己做这道题目最开始的一个思路：
  为了方便描述，把输入定义为[1,3,-1,-3,5,3,6,7], k = 3 滑动窗口的移动有两种情况，一种是从窗口从索引0 -&gt; 2移动，另外一种就是窗口长度已经是3之后的窗口移动   下面是自己最开始的思考过程，自己第一遍没有做出来，但是思路是比较接近答案的，这也就是算法中如果没有好的数据结构代码会写的又长又臭的原因
   第一步：对于[1,3,-1]的处理 第二步：对于最大值的处理，最开始想到的是定义一个max变量，然后使用Math.max(max, nums[i])这种方式去处理 第三步：移动窗口，用新进入窗口和上一个窗口最大值作比较，但是这一步有一种特殊情况，那就是得处理上一个窗口移出的值是不是最大值，比如[3,-1,-3中最大值是3，但是移动后，3已经被移除了，当前窗口的最大值是-1，为了解决这给问题自己最开始的思路是添加一个变量去记录是不是上一个窗口的第一个元素  解法一 public static int[] maxSlidingWindow(int[] nums, int k) { if (nums == null || nums.length == 0 || nums.length &lt; k) { return new int[0]; } Deque&lt;Integer&gt; deque = new LinkedList&lt;&gt;(); int[] res = new int[nums.length &#43; 1 - k]; for (int I = 0; I &lt; nums.length; I&#43;&#43;) { if (!"/>
+
+
 
 
 
@@ -131,6 +137,8 @@
 
         <article>
             <h2 class="post-title"><a href="https://blog.sailfishc.cn/algorithm/leetcode239-slidingwindowmaximum/">LeetCode 239. Sliding Window Maximum</a></h2>
+
+            
 
             
 
@@ -231,9 +239,16 @@
         <hr />
 
         <div class="post-info">
-  				<p>
-  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://blog.sailfishc.cn/tags/leetcode">LeetCode</a></span><span class="tag"><a href="https://blog.sailfishc.cn/tags/%E7%AE%97%E6%B3%95">算法</a></span>
-  				</p>
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://blog.sailfishc.cn/tags/leetcode/">LeetCode</a></span>
+        <span class="tag"><a href="https://blog.sailfishc.cn/tags/%E7%AE%97%E6%B3%95/">算法</a></span>
+        
+    </p>
+
+            
   		</div>
     </main>
 
@@ -247,15 +262,16 @@
             
                 <span><a href="https://blog.sailfishc.cn/">sailfish</a></span>
             
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="https://blog.sailfishc.cn/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://blog.sailfishc.cn/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
     </div>
     <div class="footer__inner">
         <div class="footer__content">
             <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
             <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
+          </div>
     </div>
 </footer>
 
@@ -267,15 +283,21 @@
 
 
 
-<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-124900585-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+<script type="text/javascript" src="https://blog.sailfishc.cn/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-124900585-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
 
 
 
