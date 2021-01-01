@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 21 Jun 2020 21:06:09 +0800</lastBuildDate><atom:link href="https://blog.sailfishc.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.sailfishc.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2020年总结</title>
+      <link>https://blog.sailfishc.cn/posts/2021/01/2020%E5%B9%B4%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.sailfishc.cn/posts/2021/01/2020%E5%B9%B4%E6%80%BB%E7%BB%93/</guid>
+      <description>2020年注定是被铭记的一年，上一次疫情还是2003年的非典，不过那时候年级还小，老家也比较偏僻，对于非典的感知并不强烈，这次2020年的疫情，人在北京，信息获取的渠道也丰富了很多，深刻的感受到了疫情对于世界的影响，不管多糟，生活还得继续不是吗。
+工作  这是我的2020年工作总结：
+  一月 - 拿了Offer，开始划水 二月 - 回家过年 三月 - 等待入职，一直划水 四月 - 入职加班 五月 - 熟悉业务 六月 - 加班写需求 七月 - 评价还不错的转正 八月 - 干活加班 九月 - 干活加班 十月 - 干活加班 十一月 - 干活加班 十二月 - 干活  家庭 今年是我和我媳妇结婚的第一个年头，这一年，我开始重度科学上网，微信渐渐用的少了，我的手机的第一屏软件变成了Twitter，YouTube，Dropbox，TG，Netflix, Spotify，经济学人，还有P站等等，我媳妇的是微信，小红书，微博等等，这些信息源的不同还是对我们产生了一些矛盾，一个是面基推油同事一起吃饭，一个是买了P站的Lifetime，这两件事情我和我媳妇闹得还是挺大的，但是最后的结果也还是好的，这两件事情之后让我和我媳妇找到了更加合适和舒服的相处模式，共同走过这一年多，回头来看，娶到我媳妇无疑是我这几年做的最好的一件事情。
+认知&amp;amp;成长 不要赚认知以外的钱 在 电动车数码博主，董买买2020年，挣了多少钱？【董买买】 这个视频中有一个案例比较认同：
+ 视频时间：11分45秒：2077大火的时候，他也玩了一段时间，觉得这个游戏特别好，有良好的画质，准备购买游戏公司「CD Projekt S.A. 」的股票，后来看了下一些主流游戏玩家的评论，抨击2077 Bug太多，没有达到预期的水准，并且游戏上市之后这家公司股票下跌20%，这说明游戏不在他的认知圈里边，没法根据一款游戏对这个游戏行业有很好的感知，进而有了一个错误的认知。
+ 区分价值度，做有价值的事情 还是从一个案例来描述下自己的思考：
+ A:&amp;ldquo;我想学习编译原理&amp;rdquo;
+B：“你们什么时候会用到编译原理呢？” A：“好像没有用到的时候。不过我觉得，多学点技术总没坏事，说不定哪 天就用上了。” B：“那你学了多久了，效果怎么样？” A：“学了半年了，但是感觉没学懂，所以来问问你，看看你有什么经 验。” B：“我也不懂，而且我建议你别学了。编译原理虽然是基础技术，但它跟你现在的工 作基本没有什么关系，学习编译原理并不能让你把开发做得更好，或者给你的业务带来新 的有用的功能。</description>
+    </item>
+    
     <item>
       <title>基本的Linux命令</title>
       <link>https://blog.sailfishc.cn/posts/2020/06/%E5%9F%BA%E6%9C%AC%E7%9A%84linux%E5%91%BD%E4%BB%A4/</link>
@@ -157,16 +173,6 @@
 算法和英语 先进的技术，优质的资源，英语占了很大一部分，李笑来是一个很典型的例子，早期接触比特币，之后的事情大家都知道了。
 算法能力是大厂的敲门砖，也可以改变自己的思维方式，只强调一点，不要为了刷题而刷题。
 头脑预演  举个亲身例子，很多人都有用线程的经验，可是有多少人知道线程的本质是什么？有多少人在头脑里有一幅画面，显示出多线程程序的各种动态特征？其实很少有人知道。这就是为什么很多人过度的使用线程并发，结果产生各种同步问题，竞争状态（race condition），死锁等现象。某公司的一片多线程代码，号称是“有非常多并发程序经验”的程序员写的。结果没多久我就发现里面其实含有非常微妙的竞争情况，会在非常小的概率随机发作。</description>
-    </item>
-    
-    <item>
-      <title>常用的生产力工具</title>
-      <link>https://blog.sailfishc.cn/posts/2020/03/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Wed, 25 Mar 2020 10:28:14 +0800</pubDate>
-      
-      <guid>https://blog.sailfishc.cn/posts/2020/03/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7/</guid>
-      <description>比较喜欢收集信息，对于APP也会找各种各样的去尝试（不太符合极简风格），从Mac，手机，IPad和Chrome Extension都挺多的，这里的包含了大部分的应用，作为记录。
- Mac  1Password 7 AdGuard Affinity Designer Affinity Photo AirServer Alfred 3 Anki Bear calibre Charles CheatSheet ClashX CloudMounter Dash Docker Drafts Dropbox Eagle Emacs Evernote feedly Figma Firefox GitKraken Google Chrome HandShaker Hidden Bar IINA iStat Menus iTerm JetBrains Toolbox JustFocus Kap Kawa Kindle MacUpdater Magnet mat Microsoft To Do MindNode Neat Reader NeatDownloadManager Notion OmniGraffle OneDrive PicGo Pliim Postman ScreenFlow Setapp Slack Spotify Station Studio 3T Surge Telegram Lite Typora uPic Visual Studio Code Wireshark zoom.</description>
     </item>
     
   </channel>
